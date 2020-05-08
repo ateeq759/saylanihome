@@ -1,0 +1,579 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Saylani Homepage</title>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			max-width: 100%;
+    		overflow-x: hidden;
+		}
+		.Container{
+			height:100%;
+			width: 100%;
+			overflow: hidden;
+			display: block;
+		}
+		.header{
+			height: 120px;
+			width: 100%;
+			background-color:white;
+		}
+		.topnav{
+			height: 50px;
+			width: 100%;
+			background-color: #316DC3;
+		}
+		ul{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		}
+		li{
+		float: left;
+		width: 45px;
+		margin-left: 13px;
+		font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+
+	#all1{float: left;color: white;height: 20px;}
+	#all2{float: left;color: white;height: 20px;}
+	#all3{float: left;color: white;height: 20px;}
+	#all4{float: left;color: white;height: 20px;}
+
+	.innav{
+		height: 100%;
+		width: 300px;
+		margin-left: 140px;
+		margin-top: 12px;
+		float: left;
+	}
+	.sp{
+		height: 100%;
+		float: left;
+		margin-left: 30px;
+		margin-top: 15px;
+	}
+	.sp span{
+		font-size: 10px;
+    	font-family: 'Open Sans', sans-serif;
+    	color: white;
+	}
+	.bt{
+		height: 100%;
+		width: 300px;
+		float: right;
+		margin-right: 200px;
+    	margin-top: 10px;
+	}
+	.bt button{
+		border: none;
+	    padding-bottom: 0;
+	    margin-bottom: 0;
+	    height: 30px;
+	}
+	.log{
+		height: 100%;
+		float: left;
+		margin-left: -770px;
+	}
+	.nav2{
+		height: 100%;
+		width: 700px;
+		float: right;
+	}
+	.nav2 ul li{
+		color:black;
+	    font-size: 14px;
+	    font-weight: 600;
+	    margin-left: 14px;
+	    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+	.nav2 ul li  li.active a{
+		border-radius: 50px;
+		color: black;
+		background-color: black;
+		color: black;
+		border-radius: 100px 100px 100px 100px;
+	}
+	.slider{
+		height: 500px;
+		width: 1500px;
+		background-color: red;
+		float: left;
+		margin-top: -65px;
+	}
+	.images img{float: left;}
+	.images{width:4500px;animation: text 15s infinite}
+	@keyframes text
+	{
+		0%{margin-left:  0px;}
+		25%{margin-left: -1500px;}		
+		50%{margin-left:  -3000px;}
+		75%{margin-left: -3000px;}
+		100%{margin-left: 0px;}
+	}
+
+	.new{
+		height: 50px;
+		width:80%;
+		overflow: hidden;
+	}
+	.content{
+		width: 100%;
+		height: 550px;
+		background-color: #f7f8fa
+	}
+	.gallery{
+		width: 100%;
+		height: 300px;
+		margin-top:50px;
+	}
+	.content2{
+		width: 100%;
+		height: 600px;
+		background-color: #f7f8fa
+	}
+	.content3{
+		width: 100%;
+		height:320px;
+	}
+	.para{
+		height: 100%;
+		width: 1080px;
+	}
+	p{
+		text-align: justify; 
+		visibility: visible;
+		font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 15px;
+		color: #666666;
+	}
+	.count{
+		width: 100%;
+		height: 300px;
+		background-color: blue;
+		overflow: hidden;
+	}
+	.pic1{
+		height: 200px;
+		width: 350px;
+		float: left;
+		margin: 7px;
+		background-color: white;
+		box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+		padding: 15px;
+		margin-left: 10px;
+	}
+	.g1{
+		height: 160px;
+		width: 250px;
+		float: left;
+		margin: 3px;
+	}
+	.in1{
+		height: 100px;
+		width: 370px;
+		float: left;
+		margin: 10px;
+		background-color:WhiteSmoke;
+		padding: 15px;
+		margin-left: 10px;
+		border:1px solid WhiteSmoke;
+	}
+	.bigrow{
+		height: 100px;
+		width: 350px;
+		float: left;
+		background-color: white;
+		box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+	}
+	.blue1{
+		height: 200px;
+		width: 350px;
+		float: left;
+		margin: 7px;
+		padding: 15px;
+		margin-left: 10px;
+	}
+	.outer{
+		height: 100%;
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 202px;
+	}
+	.outer1{
+		height: 100%;
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 202px;
+	}
+	.outer2{
+		height: 100%;
+		width: 100%;
+		margin-top: 20px;
+	}
+	 .project h3{
+		color: #316DC3;
+		font-size: 24px;
+		font-weight: 600;
+    	line-height: 1.42857143;
+   		float: left;
+        margin-left: 195px;
+	}
+	.mission{
+		overflow: hidden;
+		height: 250px;
+		width: 100%;
+		background-color: gray;
+	}
+	.img1{
+		margin-right: 310px;
+		margin-top: 30px;
+	}
+	.footer{
+		height: 350px;
+		width: 100%;
+		background-color: rgb(37, 39, 46);
+		margin-top: 50px;
+	}
+	.useful{
+		height: 60%;
+		width: 30%;
+		float: left;
+		margin-left: 176px;
+		margin-top: 70px;
+	}
+	.uslink{
+		overflow: hidden;
+		height: 100px;
+		width: 140px;
+		margin-right: 570px;
+		padding-top: 30px;
+		border-bottom: 2px solid green;
+	}
+	.links{
+    height: 100px;
+    width: 300px;
+    float: right;
+    overflow: hidden;
+   	margin-top: -66px;
+    margin-right: 345px;
+}
+	.fa-facebook{float:left;font-size: 25px;overflow: hidden;margin-left: 10%;color: white;}
+	.fa-twitter{float: left;font-size: 25px;overflow: hidden;margin-left: 16%;color: white;}
+	.fa-linkedin{float: left;font-size: 25px;overflow: hidden;margin-left: 17%;color: white;}
+	.fa-youtube{float: left;font-size: 25px;overflow: hidden;margin-left: 22%;color: white;}
+
+	.end{
+		height: 45px;
+		width: 100%;
+		overflow: hidden;
+		background-color:  #316DD9 !important;
+	}
+
+	</style>
+
+</head>
+                         
+<body>
+	
+	<center><div class="Container">
+		<div class="header">
+		<div class="topnav">
+			<div class="innav">
+		<ul>
+			<li id="all1"><i class="fa fa-facebook"></i></li>
+			<li id="all2"><i class="fa fa-whatsapp"></i></li>
+			<li id="all3"><i class="fa fa-instagram"></i></li>
+			<li id="all4"><i class="fa fa-twitter"></i></li>
+		</ul>
+		</div>
+
+		<div class="sp"><span>Millions of people's life has changed, millions more awaiting your donation</span></div>
+		<div class="bt">
+			<button>UK Donor</button>
+			<button>Donate Now</button>
+			<button>SMIT Result</button>
+		</div>
+		</div>
+		<div class="log"><img src="Saylani-logo.png" height="50%" ></div>
+		<div class="nav2">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Services</li>
+			<li>Future</li>
+			<li>Media</li>
+			<li>News</li>
+			<li>Donation</li>
+		</ul>	
+
+		</div>
+			
+		</div>
+
+		<!---END OF HEADER	!-->
+		<div class="slider">
+		<div class="images">
+			<img src="Banner.jpg">
+			<img src="Ehsas.jpg">
+			<img src="Rotibank.jpg">
+		</div>
+		</div>
+
+		<div class="new"><p style="margin-top: 12px; background-color: #316DC3;color: white;">
+			
+			<marquee direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+                            <font color="#00FF00">(News-1 Dated:15-06-2019)<font color="#FFFFFF">&nbsp;&nbsp;PIAICNext Phase Admission in Islamabad And Faisalabad" . <a href="" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-2 Dated:15-05-2019)<font color="#FFFFFF">&nbsp;&nbsp;Saylani Welfare Announced "Donation Application" . <a href="" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-3 Dated:07-05-2019)<font color="#FFFFFF">&nbsp;&nbsp;Alhamdulillah Saylani Organized 200+ Locations For Iftar And Sehri In This Holy Month . <a href="" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-4 Dated:08-03-2019)<font color="#FFFFFF">&nbsp;&nbsp;Saylani Welfare Distributing Ration &amp; Clothes to affected people of Balochistan. <a href="" style="color: blue">More Details</a> &nbsp;&nbsp;
+                            <font color="#00FF00">(News-5 Dated:25-02-2019)<font color="" style="color: blue">More Details</a>&nbsp;&nbsp;
+                            <font color="#00FF00">(News-6 Dated:23-02-2019)<font color="#FFFFFF">&nbsp;&nbsp;President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. <a href="" style="color: blue">More Details</a> &nbsp;&nbsp;                    
+                            <font color="#00FF00">(News-7 Dated:19-02-2019)<font color="#FFFFFF">&nbsp;&nbsp;Dr Jamil Ahmed (Additional Inspector General of Police) &amp; Atiqmir Visit Saylani Welfare International Trust, Saylani Mass I.T. Training. <a href="" style="color: blue">More Details</a> &nbsp;&nbsp;     
+                        </font></font></font></font></font></font></font></font></font></font></font></font></font></font></marquee>
+		</p></div>
+
+		<div class="content">
+			<center>
+				<h2 style="color: black;font-weight: 600">INTRO<span style="color: #427900;font-weight: 600">DUCTION</span></h2>
+				<div class="title-icon">
+                  <img src="favicon.png" style="height: 40px;">
+                   </div>
+                   <div class="para">
+                   <p >Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani
+                                Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial
+                                troubles of the poor, giving people a chance to live a dignified life and spreading happiness.
+                                <br>
+                                <br>
+                                <br>
+                                We are an organization that believes in lighting up the lives of underprivileged people across the world. We
+                                endeavor to provide the best quality services in areas including food, education, medical and social welfare free
+                                of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day,
+                                hundreds more are given the hope of life through medical health care, many are educated to become leaders of
+                                tomorrow and several are given the opportunity to stand on their feet financially.
+                                <br>
+                                <br>
+                                <br>
+                                Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125
+                                branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and
+                                Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide
+                                branches are operating under the guidance of a team of over 2,000 working professionals who help almost
+                                125,000 people on a daily basis.
+                                <br>
+                                <br>
+                                <br>
+                                We strongly believe that a little help goes a long way and our work would not be possible without the generous
+                                support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting
+                                our causes and enabling us to serve the needs of people in need.
+                            </p>
+                            </div>
+			</center>	
+
+		</div>
+		<div class="count">
+			<div class="outer2">
+
+	 <div class="blue1" >
+	<img src="icon_family_png.png" style="height: 50px">
+	<h2 style="color: #fff !important;font-weight: 500 !important;line-height: 1.42857143;font-size:50px;">75,000</h2>
+	<h5 style="font-weight: 600 !important;color: #fff !important;font-size: 20px;" >FAMILY ADOPTION<span ><font color="#00FF00">(Monthly)</font></span></h5>
+	</div>
+
+	 <div class="blue1" >
+	<img src="icon_food_png.png" style="height: 50px">
+	<h2 style="color: #fff !important;font-weight: 500 !important;line-height: 1.42857143;font-size:50px;">125,000</h2>
+	<h5 style="font-weight: 600 !important;color: #fff !important;font-size: 20px;" >DAILY DASTARKHWAN<span ><font color="#00FF00">(Monthly)</font></span></h5>
+	</div>
+
+	 <div class="blue1" >
+	<img src="icon_medical_png.png" style="height: 50px">
+	<h2 style="color: #fff !important;font-weight: 500 !important;line-height: 1.42857143;font-size:50px;">43,749</h2>
+	<h5 style="font-weight: 600 !important;color: #fff !important;font-size: 20px;" >MEDICAL<span ><font color="#00FF00">(Monthly)</font></span></h5>
+	</div>
+
+	 <div class="blue1" >
+	<img src="icon_education_png.png" style="height:50px">
+	<h2 style="color: #fff !important;font-weight: 500 !important;line-height: 1.42857143;font-size:50px;">125,000</h2>
+	<h5 style="font-weight: 600 !important;color: #fff !important;font-size: 20px;" >EDUCATION<span ><font color="#00FF00">(Monthly)</font></span></h5>
+	</div>
+
+		</div>
+		</div>
+
+		<div class="content2">
+			<center>
+				
+				<h2 style="color: black;font-weight: 600">WHAT    WE     <span style="color: #427900;font-weight: 600">ARE DOING</span></h2>
+				<div class="title-icon">
+                  <img src="favicon.png" style="height: 40px;">
+                   </div>
+                   </center>
+       <div class="row">
+    <div class="outer">
+
+     <div class="pic1" >
+	<img src="onlinesadqah.png" style="margin-top: 25px;">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;">ONLINE SADQAH</h4>
+	
+	</div>	
+
+	 <div class="pic1" >
+	<img src="welfare.png" style="margin-top: 25px;">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;">WELFARE</h4>
+	
+	</div>	
+	 <div class="pic1" >
+	<img src="medical.png" style="margin-top: 25px;">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;">MEDICAL</h4>
+	</div>	
+
+	</div>
+	</div>
+	  <div class="row">
+    <div class="outer">
+
+     <div class="pic1" >
+	<img src="Dastarkhwan.png" style="margin-top: 25px;">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;">DASTARKHWAN</h4>
+	
+	</div>	
+
+	 <div class="pic1" >
+	<img src="ROPLANT.png" style="margin-top: 25px;">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;">RO PLANT</h4>
+	
+	</div>	
+	 <div class="pic1" >
+	<img src="education.png" style="margin-top: 25px;">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;">EDUCATION</h4>
+	</div>	
+
+	</div>
+	</div>
+	
+		</div>
+
+		<div class="content3">
+		<h2 style="color: #316DC3;;font-weight: 600;margin-right: 560px;">MISSION AND UPCOMING PROJECTS</h2>
+				
+                   
+       <div class="row">
+    <div class="outer1">
+	<div class="in1" >
+	<img src="Hepatitis.png">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;font-family: 'Merriweather', serif">HEPATITIS</h4>
+
+	</div>	
+
+	 <div class="in1" >
+	<img src="housing.png" >
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;font-family: 'Merriweather', serif">HOUSING SOCIETY</h4>
+	</div>	
+
+	</div>
+	</div>
+	  <div class="row">
+    <div class="outer1">
+
+     <div class="in1" >
+	<img src="tharparkar.png" >
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;font-family: 'Merriweather', serif">THARPARKAR</h4>
+	
+	</div>	
+
+	 <div class="in1" >
+	<img src="IT.png">
+	<h4 style="color: #316DC3;font-weight: 600 !important;font-size: 20px;line-height: 1.42857143;font-family: 'Merriweather', serif">IT LITERACY</h4>
+
+	</div>
+
+	</div>
+	</div>
+
+		</div>
+		<div class="gallery">
+			<center>
+				
+				<h2 style="color: black;font-weight: 600">IMAGE     <span style="color: #427900;font-weight: 600">GALLERY</span></h2>
+				<div class="title-icon">
+                  <img src="favicon.png" style="height: 40px;">
+                   </div>
+                   </center>
+       <div class="row">
+    <div class="outer">
+
+     <div class="g1" >
+	<img src="rashan2.jpg" style="height: 100%;width: 100%;">
+
+	</div>	
+
+	 <div class="g1" >
+	<img src="food.jpg" style="height: 100%;width: 100%;">
+
+	</div>	
+	 <div class="g1" >
+	<img src="hazrat.jpg" style="height: 100%;width: 100%;">
+
+	</div>
+	 <div class="g1" >
+	<img src="hazrat2.jpg" style="height: 100%;width: 100%;">
+	
+	</div>
+
+	</div>
+	</div>
+		</div>
+
+		<div class="footer">
+			<div class="useful">
+				<p style="color: #bbb;margin-bottom: 10px;">Head Office,<br>A-25, Bahadurabad Chowrangi Karachi, Pakistan</p>
+				<ul>
+					<li><i class="fa fa-phone text-theme-colored mr-5" style="color: #427900 !important;font-size: 18px;margin-right: 12px !important; margin-top: 4px;"></i><span style="overflow: hidden;position: absolute;font-size: 15px;color: #bbb;">UAN:111-729-526</span></li><br>
+
+				</ul>
+				<br>
+				<ul>
+					<li><i class="fa fa-phone text-theme-colored mr-5" style="color: #427900 !important;font-size: 18px;margin-right: 12px !important; margin-top: 4px;"></i><span style="overflow: hidden;position: absolute;font-size: 15px;color: #bbb;">CELL: 92-311-1729526</span></li><br>
+
+				</ul><br>
+				<ul>
+					<li><i class="fa fa-phone text-theme-colored mr-5" style="color: #427900 !important;font-size: 18px;margin-right: 12px !important; margin-top: 4px;"></i><span style="overflow: hidden;position: absolute;font-size: 15px;color: #bbb;">USA NO +1(716)941 7792</span></li><br>
+
+				</ul><br>
+				<ul>
+					<li><i class="fa fa-phone text-theme-colored mr-5" style="color: #427900 !important;font-size: 18px;margin-right: 12px !important; margin-top: 4px;"></i><span style="overflow: hidden;position: absolute;font-size: 15px;color: #bbb;">UK NO (+44)115 970 6256</span></li><br>
+
+				</ul><br>
+				<ul>
+					<li><i class="fa fa-envelope-o text-theme-colored mr-5" style="color: #427900 !important;font-size: 18px;margin-right: 12px !important; margin-top: 4px;"></i><span style="overflow: hidden;position: absolute;font-size: 15px;color: #bbb;">info@saylaniwelfare.com</span></li><br>
+				</ul>
+	</div>
+			<div class="uslink">
+				<h4 style="color: #fff;font-weight: 600;line-height: 1.42857143;"> Useful Link </h4>
+			</div>
+
+			<div class="links">
+		<h4 style="color: #fff;font-weight: 600;line-height: 1.42857143;">Connect With us </h4>	
+		
+		<div class="fa fa-facebook"></div>
+		<div class="fa fa-twitter"></div>
+		<div class="fa fa-linkedin"></div>
+		<div class="fa fa-youtube"></div>
+			
+	</div>
+
+</div>
+<div class="end">
+
+	<span style="font-size: 11px !important;color: white;font-family:'Open Sans', sans-serif;float:left;margin-left: 192px;
+	margin-top: 15px; ">Copyright © 2020 Saylani Welfare</span>
+</div>
+</div>
+</center>
+
+</body>
+</html>
